@@ -2,7 +2,7 @@ pipeline {
     agent {
         dockerfile true
     }
-    syages {
+    stages {
         stage ('Os') {
             steps {
                 sh 'cat /etc/os-release'
